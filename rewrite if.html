@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		// let result = (a + b < 4) ? "Below" : "Over";
+
+		// let message = (login == "Employee") ? "Hello" : 
+		//       (login == 'Director') ? "Greetings" : 
+		//       (login == '') ? "No login" : 
+		//       "";
+
+
+		// let age;
+
+		// if (age >== 14 && age <== 90) {
+		// 	alert('kjh');
+		// }
+
+		// if (!(age >== 14) && !(age <== 90)) {
+
+		// }
+
+		// if (age < 14 || age > 90){
+
+		// }
+
+
+		let login = prompt ('Who\'s there?','');
+
+		if (login === '' || login === null) {
+			alert('Canceled.');
+		} else if (login === 'Admin') {
+			let password = prompt('Password?','');
+			
+            if (password === '' || password === null) {
+            	alert('Canceled.');
+            } else if (password === 'TheMaster') {
+            	alert('Welcome!');
+            } else {
+            	alert('Wrong password.');
+            }
+		} else {
+			alert('I don\'t know you.');
+		}
+
+
+
+
+	</script>
+
+</body>
+</html>
