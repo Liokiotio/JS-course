@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //task 1. array operations
+        let styles = ['Jazz', 'Blues'];
+        styles.push('Rock-n-Roll');
+        styles[(styles.length - 1) / 2] = 'Classics';
+        alert( styles.shift() );
+        styles.unshift('Rap', 'Reggae');
+
+        //task 2.
+        function sumInput() {
+            let numbersArray = [];
+            let input = prompt('A number please?','0');
+
+            while (!isNaN(input) && input !== null) {
+                numbersArray.push(+input);
+                input = prompt('A number please?','0');
+            }
+
+            let sum = 0;
+
+            for (let number of numbersArray) {
+                sum += number;
+            }
+
+            return sum
+        }
+        
+    </script>
+</body>
+</html>

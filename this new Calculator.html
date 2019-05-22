@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+	
+		let calculator = new Calculator();
+		calculator.read();
+
+		alert( "Sum=" + calculator.sum() );
+		alert( "Mul=" + calculator.mul() );
+
+	  function Calculator() {
+	    this.read = function() {
+		    let firstNumber = prompt('a?', '0');
+		    let secondNumber = prompt('b?','0');
+		    this.firstNumber = +firstNumber;
+		    this.secondNumber = +secondNumber;
+	    }
+
+	    this.sum = function() {
+	    	return this.firstNumber + this.secondNumber
+	    }
+
+	    this.mul = function() {
+	    	return this.firstNumber * this.secondNumber
+	    }
+	  }
+
+	</script>
+
+</body>
+</html>

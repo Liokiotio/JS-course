@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let min = +prompt('Enter min', '');
+        let max = +prompt('Enter max', '');
+
+        alert(`Random number: ${getRandomNumber(min,max)}`);
+        alert(`Random number: ${getRandomNumber(min,max)}`);
+        alert(`Random number: ${getRandomNumber(min,max)}`);
+
+        alert(`Random integer: ${getRandomInteger(min,max)}`);
+        alert(`Random integer: ${getRandomInteger(min,max)}`);
+        alert(`Random integer: ${getRandomInteger(min,max)}`);
+
+        function getRandomNumber(minNumber, maxNumber) {
+            return minNumber + Math.random() * (maxNumber - minNumber);
+        }
+
+        function getRandomInteger(minNumber, maxNumber) {
+            let randomNumber = getRandomNumber(minNumber, maxNumber + 1);
+            return Math.floor(randomNumber);
+        }
+
+
+    </script>
+</body>
+</html>

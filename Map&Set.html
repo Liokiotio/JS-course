@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        //task 1
+
+         let values = ["Hare", "Krishna", "Hare", "Krishna",
+             "Krishna", "Krishna", "Hare", "Hare", ":-O"
+         ];
+
+         function unique(array) {
+             let result = new Set();
+             array.forEach( item => result.add(item) );
+             return Array.from(result)
+         }
+        alert(unique(values));
+
+        //task 2
+        let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+        function aclean(array) {
+
+            let noAnagrams = [];
+            let checking = new Set();
+
+            for (let string of array) {
+                let key = Array.from( string.toLowerCase() ).sort().join('');
+                if (checking.has(key) === false) {
+                    noAnagrams.push(string);
+                };
+                checking.add(key);
+            };
+            return noAnagrams
+        }
+
+        alert(aclean(arr));
+
+
+
+    </script>
+</body>
+</html>

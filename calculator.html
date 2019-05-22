@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <script>
+
+  let calculator = {
+
+    read: function() {
+      let a = prompt('a?', '');
+      let b = prompt('b?', '');
+      calculator.a = +a;
+      calculator.b = +b;
+    },
+
+    sum: function() {
+      return this.a + this.b;
+    },
+
+    mul: function() {
+      return this.a * this.b;
+    },
+  };
+
+  calculator.read();
+  alert( calculator.sum() );
+  alert( calculator.mul() );
+
+</script>
+</body>
+</html>

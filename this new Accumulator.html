@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		let accumulator = new Accumulator(1); // initial value 1
+		accumulator.read(); // adds the user-entered value
+		accumulator.read(); // adds the user-entered value
+		alert(accumulator.value); // shows the sum of these values
+
+		function Accumulator(initValue) {
+			this.value = +initValue;
+			this.read = function() {
+				let whatToAdd = +prompt('How much to add?', '');
+				this.value += whatToAdd;
+			}
+		}
+	</script>
+</body>
+</html>

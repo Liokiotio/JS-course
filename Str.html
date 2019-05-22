@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function ucFirst(str) {
+            if (str === '') return '';
+            return str[0].toUpperCase() + str.slice(1);
+        }
+
+        function checkSpam(str) {
+            let lowerStr = str.toLowerCase();
+                return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+        }
+
+        function truncate(str, maxlength) {
+            if (str.length > maxlength) {
+                return str.slice(0, maxlength - 1) + '…';
+            } else {
+                return str;
+            }
+        }
+        
+        function extractCurrencyValue(str) {
+            return +str.slice(1);
+        }
+        alert( 'Osterreich'.localeCompare('Osterreich') );
+        // alert('012345678'.substring(6,2));
+        // alert('012345678'.slice(2,6));
+
+    </script>
+</body>
+</html>
